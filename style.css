@@ -244,3 +244,80 @@ body {
 @media (max-width: 480px) {
 }
 /* End Responsive */
+
+.card-slider {
+    position: relative;
+    overflow: hidden;
+    margin: 0 auto;
+    width: 80%;
+    max-width: 1200px;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: nowrap;
+    transition: transform 0.3s ease-in-out;
+}
+
+.card {
+    flex: 0 0 300px;
+    margin: 0 10px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+    display: block;
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card h3 {
+    margin-top: 10px;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.card p {
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+.card a {
+    display: block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 25px;
+}
+
+.prev-btn,
+.next-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border: none;
+    outline: none;
+    font-size: 24px;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.next-btn {
+    right: 0;
+}
+
+.prev-btn:hover,
+.next-btn:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
