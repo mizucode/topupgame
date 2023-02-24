@@ -114,9 +114,9 @@ body {
 
 .hero .content {
     align-items: center;
-    margin-top: 1rem;
+    margin-top: 5rem;
     margin-bottom: 3rem;
-    padding-top: 2rem;
+    padding-top: 4rem;
 }
 
 .hero .content h2 {
@@ -143,6 +143,17 @@ body {
     -o-border-radius: 0.5rem;
 }
 
+.hero .content .cta:hover {
+    color: #fff;
+    background-image: none;
+    background-color: var(--main);
+    transition: 0.4s;
+    -webkit-transition: 0.2s;
+    -moz-transition: 0.4s;
+    -ms-transition: 0.4s;
+    -o-transition: 0.4s;
+}
+
 .hero .content p {
     width: 50%;
     margin: 1rem auto;
@@ -154,6 +165,17 @@ body {
 /* Mizupoint */
 .price {
     padding: 8rem 3% 1.4rem;
+}
+
+.swiper-pagination.bullet {
+    color: var(--biru);
+    margin-top: 10rem;
+    padding-top: 5rem;
+}
+
+.swiper-slide {
+    display: flex;
+    justify-content: space-between;
 }
 
 .price .title {
@@ -217,6 +239,10 @@ body {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+}
+
+.price .title h2 {
+    font-size: 3rem;
 }
 
 /* End Mizupoint */
@@ -285,7 +311,7 @@ body {
         font-size: 90%;
     }
     .price .title {
-        justify-content: space-around;
+        justify-content: space-between;
     }
 }
 
