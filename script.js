@@ -1,7 +1,8 @@
 var swiper = new Swiper(".mySwiper", {
-    slidesPerView: 4,
-    spaceBetween: 50,
-    loop: true,
+    slidesPerView: "auto",
+    spaceBetween: 1,
+    loop: false,
+    loopedSlides: 10,
     centerSlide: "true",
     fade: "true",
     grabCursor: "true",
@@ -10,13 +11,15 @@ var swiper = new Swiper(".mySwiper", {
         clickable: true,
     },
     navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
+        nextEl: "#more-bck",
+        prevEl: "#more",
+        nextE2: "#more-bck2",
+        prevE2: "#more2",
     },
 
     breakpoints: {
         0: {
-            slidesPerView: 1,
+            slidesPerView: 4,
         },
         800: {
             slidesPerView: 5,

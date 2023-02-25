@@ -165,6 +165,17 @@ body {
 /* Mizupoint */
 .price {
     padding: 8rem 3% 1.4rem;
+    margin: 0 auto;
+}
+
+#more {
+    padding: 0.6rem 2rem;
+    font-size: 2rem;
+}
+
+#more-bck {
+    padding: 0.6rem 2rem;
+    font-size: 2rem;
 }
 
 .swiper-pagination.bullet {
@@ -176,6 +187,9 @@ body {
 .swiper-slide {
     display: flex;
     justify-content: space-between;
+    text-align: center;
+    padding: 0.2rem;
+    width: auto;
 }
 
 .price .title {
@@ -184,22 +198,18 @@ body {
     justify-content: space-between;
 }
 
-.price .title a {
+.price .title button {
     color: #fff;
+    background-color: #171717;
     padding: 0.2rem 0.4rem;
     font-size: 1.3rem;
     font-weight: 400;
-    border: 0.1rem solid #fff;
+    border: 0.1rem solid #3a3a3a;
 }
 
 .price .content-box .box {
     width: 15rem;
     box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.2);
-    border-radius: 1rem;
-    -webkit-border-radius: 1rem;
-    -moz-border-radius: 1rem;
-    -ms-border-radius: 1rem;
-    -o-border-radius: 1rem;
     overflow: hidden;
     background-color: #262626;
 }
@@ -219,8 +229,10 @@ body {
     width: 100%;
     display: flex;
     justify-content: center;
+    align-items: center;
     padding: 0.8rem 1.3rem;
     box-sizing: border-box;
+    margin: auto;
 }
 
 .price .box .detail-box a {
@@ -228,16 +240,11 @@ body {
     font-size: 1.3rem;
 }
 
-.price .cs-hidden {
-    display: flex;
-    list-style: none;
-}
-
 .price .content-box {
     width: 100%;
     margin-top: 2rem;
     display: flex;
-    justify-content: space-between;
+    align-items: center;
     flex-wrap: wrap;
 }
 
@@ -281,18 +288,13 @@ body {
     }
 
     .price .content-box .box {
-        width: 40%;
-        border-radius: 0.6rem;
-        -webkit-border-radius: 0.6rem;
-        -moz-border-radius: 0.6rem;
-        -ms-border-radius: 0.6rem;
-        -o-border-radius: 0.6rem;
+        width: 25rem;
     }
     .price .slide-img {
-        height: 80%;
+        height: 100%;
     }
     .price .box .detail-box a {
-        font-size: 1rem;
+        font-size: 50%;
     }
     .price .content-box {
         padding-bottom: 2rem;
@@ -312,6 +314,20 @@ body {
     }
     .price .title {
         justify-content: space-between;
+    }
+    .price .box .detail-box {
+        padding: 0 1.3rem;
+        padding-bottom: 0.8rem;
+        font-size: 1.1rem;
+    }
+    #more {
+        padding: 0.3rem 1rem;
+        font-size: 1rem;
+    }
+
+    #more-bck {
+        padding: 0.3rem 1rem;
+        font-size: 1rem;
     }
 }
 
