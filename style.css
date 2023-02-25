@@ -113,10 +113,11 @@ body {
 }
 
 .hero .content {
-    align-items: center;
     margin-top: 5rem;
     margin-bottom: 3rem;
     padding-top: 4rem;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .hero .content h2 {
@@ -400,3 +401,34 @@ footer a:hover {
     }
 }
 /* End Responsive */
+
+.sidebar {
+    color: #171717;
+    position: absolute;
+    top: 0;
+    left: -100%;
+    background-color: var(--main);
+    width: 15rem;
+    height: 1000vh;
+    z-index: 3;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+    position: fixed;
+}
+
+.sidebar a {
+    color: #171717;
+    display: block;
+    margin: 1.5;
+    padding: 0.5rem;
+}
+
+.sidebar.active {
+    box-shadow: 200px 2px 96px 200px rgba(0, 0, 0, 0.63);
+    -webkit-box-shadow: 200px 2px 96px 200px rgba(0, 0, 0, 0.63);
+    -moz-box-shadow: 200px 2px 96px 200px rgba(0, 0, 0, 0.63);
+    left: 0;
+}
