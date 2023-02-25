@@ -168,12 +168,18 @@ body {
     margin: 0 auto;
 }
 
-#more {
+#price2 {
+    margin-top: -5rem;
+}
+
+#more,
+#more2 {
     padding: 0.6rem 2rem;
     font-size: 2rem;
 }
 
-#more-bck {
+#more-bck,
+#more-bck2 {
     padding: 0.6rem 2rem;
     font-size: 2rem;
 }
@@ -259,7 +265,11 @@ body {
 /* Responsive */
 @media only screen and (max-width: 1080px) and (max-height: 1920px) {
     html {
-        font-size: 80%;
+        /* font-size: 80%; */
+    }
+
+    .navbar {
+        padding-top: 2rem;
     }
 
     .navbar .navbar-logo {
@@ -267,7 +277,7 @@ body {
     }
 
     .hero .content {
-        padding-top: 13rem;
+        padding-top: 1rem;
         font-size: 1.2rem;
         padding-bottom: 10rem;
     }
@@ -318,7 +328,8 @@ body {
     .price .box .detail-box {
         padding: 0 1.3rem;
         padding-bottom: 0.8rem;
-        font-size: 1.1rem;
+        font-size: 2rem;
+        white-space: nowrap;
     }
     #more {
         padding: 0.3rem 1rem;
@@ -332,5 +343,11 @@ body {
 }
 
 @media (max-width: 480px) {
+    .price .box .detail-box {
+        padding: 0 1.3rem;
+        padding-bottom: 0.8rem;
+        font-size: 1.8rem;
+        white-space: nowrap;
+    }
 }
 /* End Responsive */
