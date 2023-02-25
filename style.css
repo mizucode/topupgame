@@ -17,7 +17,7 @@ body {
     font-family: "Poppins";
     background-color: var(--main);
     color: #fff;
-    min-height: 4000px;
+    /* min-height: 4000px; */
 }
 
 /* Navbar */
@@ -169,7 +169,7 @@ body {
 }
 
 #price2 {
-    margin-top: -10rem;
+    margin-top: -5rem;
 }
 
 #more,
@@ -260,6 +260,51 @@ body {
 
 /* End Mizupoint */
 
+footer {
+    background-color: #222;
+    color: #fff;
+    padding: 40px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+footer h3 {
+    color: #fff;
+}
+
+footer p {
+    line-height: 1.5;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer ul li {
+    margin-bottom: 10px;
+}
+
+footer a {
+    color: #fff;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .col-md-3 {
+        margin-bottom: 20px;
+    }
+}
+
 /* End Navbar */
 
 /* Responsive */
@@ -277,7 +322,7 @@ body {
     }
 
     .hero .content {
-        padding-top: 13rem;
+        padding-top: 5rem;
     }
 
     .hero .content h1 {
@@ -333,6 +378,10 @@ body {
     #more2 {
         padding: 0.3rem 1rem;
         font-size: 1rem;
+    }
+
+    #price2 {
+        margin-top: -10rem;
     }
 
     #more-bck,
