@@ -75,3 +75,9 @@ document.addEventListener("click", function (e) {
         navbarNav.classList.remove("active");
     }
 });
+
+let searchNav = document.querySelector(".navbar-nav");
+
+document.querySelector("#seacrh").onclick = () => {
+    searchNav.classList.toggle("active");
+};
