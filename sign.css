@@ -123,11 +123,12 @@ body {
     align-items: center;
     justify-content: center;
     background-color: var(--main);
+    column-gap: 3px;
 }
 
 .form {
     position: fixed;
-    max-width: 26rem;
+    max-width: 20rem;
     width: 100%;
     padding: 2rem;
     background-color: white;
@@ -136,6 +137,9 @@ body {
     -moz-border-radius: 0.3rem;
     -ms-border-radius: 0.3rem;
     -o-border-radius: 0.3rem;
+    box-shadow: -0px 0px 3px 5px rgba(0, 0, 0, 0.36);
+    -webkit-box-shadow: -1px 1px 3px 2px rgba(0, 0, 0, 0.36);
+    -moz-box-shadow: -1px 1px 3px 2px rgba(0, 0, 0, 0.36);
 }
 
 header {
@@ -149,10 +153,16 @@ form {
     margin-top: 1rem;
 }
 
-form .field {
+.form .field {
+    position: relative;
     height: 2rem;
     width: 100%;
     margin-top: 0.8rem;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
 }
 
 .field input,
@@ -172,13 +182,32 @@ form .field {
     font-weight: 400;
     border: 0.1rem solid #cacaca;
     padding: 0 1rem;
+    outline: none;
+}
+.field input:focus {
+    border-bottom-width: 2px;
 }
 
 .form-link {
     text-align: center;
     margin-top: 1rem;
+    font-size: 0.8rem;
 }
 
+.eye-icon {
+    top: 50%;
+    right: 1rem;
+    transform: translateY(-50%);
+    position: absolute;
+    font-size: 0.9rem;
+    color: #8b8b8b;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    cursor: pointer;
+    padding: 5px;
+}
 .form-link span {
     color: #171717;
 }
@@ -193,6 +222,98 @@ form .field {
     color: var(--biru);
 }
 
-.form a:hover {
+.form-content a:hover {
     text-decoration: underline;
+}
+
+.line {
+    height: 1px;
+    width: 100%;
+    position: relative;
+    background-color: #d4d4d4;
+    margin: 1rem 0;
+}
+
+.line::before {
+    content: "or";
+    color: var(--main);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 0 1rem;
+}
+.field button {
+    color: #fff;
+    background-color: #0171d3;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+}
+.field button:hover {
+    color: #fff;
+    background-color: #016dcb;
+}
+
+.media-options a {
+    display: flex;
+    background-color: #4267b2;
+    align-items: center;
+    justify-content: center;
+}
+
+a.facebook {
+    color: #ffffff;
+    font-size: 0.7rem;
+    background-color: #4267b2;
+}
+
+a.facebook .facebook-icon {
+    color: #016dcb;
+    font-size: 15px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 25px;
+    width: 25px;
+    background-color: #fff;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.facebook-icon {
+    position: absolute;
+    top: 50%;
+    left: 1rem;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+}
+
+.bg {
+    position: fixed;
+    top: 15%;
+    left: 40%;
+}
+@media only screen and (max-width: 1080px) and (max-height: 1920px) {
+    .navbar .navbar-nav a {
+        display: none;
+    }
+    .bg {
+        position: fixed;
+        top: 15%;
+        left: -88%;
+    }
 }
